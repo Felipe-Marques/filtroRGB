@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Author" content="Felipe de Souza Marques" />
+    <meta name="Description" content="Trabalho prático do bootcamp IGTI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Filtro RGB</title>
+  </head>
+  <body>
+    <div class="nav">
+      <img src="img/logo.png" alt="Brand" />
+      <h1>Filtro RGB</h1>
+    </div>
+
+    <section>
+      <div id="content">
+        <form class="filter">
+          <div id="labels">
+            <label for="input1">
+              <strong>(R) Vermelho: </strong>
+            </label>
+            <label for="input2">
+              <strong>(G) Verde: </strong>
+            </label>
+            <label for="input3">
+              <strong>(B) Azul: </strong>
+            </label>
+          </div>
+
+          <!--prettier-ignore-->
+          <div id="inputs">
+            <input type="range" id="input1" value="0" min="0" max="255" />
+            <input type="range" id="input2" value="0" min="0" max="255" />
+            <input type="range" id="input3" value="0" min="0" max="255" />
+          </div>
+
+          <div id="input-reader">
+            <input type="text" id="color1" placeholder="0" disabled />
+            <input type="text" id="color2" placeholder="0" disabled />
+            <input type="text" id="color3" placeholder="0" disabled />
+          </div>
+        </form>
+
+        <div id="demo-color" class="demo"></div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <span> Made by Felipe Marques</span>
+    </div>
+
+    <script src="js/myScript.js"></script>
+  </body>
+</html>
