@@ -1,1 +1,3 @@
 # filtroRGB
+
+Editado no Github.
