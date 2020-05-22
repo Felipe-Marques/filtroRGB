@@ -3,20 +3,16 @@ window.addEventListener('load', start);
 
 function start() {
   var input1 = document.querySelector('#input1');
-  input1.addEventListener('mousemove', captureR);
-  input1.addEventListener('change', captureR);
+  input1.addEventListener('input', captureR);
 
   var input2 = document.querySelector('#input2');
-  input2.addEventListener('mousemove', captureG);
-  input2.addEventListener('change', captureG);
+  input2.addEventListener('input', captureG);
 
   var input3 = document.querySelector('#input3');
-  input3.addEventListener('mousemove', captureB);
-  input3.addEventListener('change', captureB);
+  input3.addEventListener('input', captureB);
 
   var mainForm = document.querySelector('.filter');
-  mainForm.addEventListener('mousemove', changeColor);
-  mainForm.addEventListener('change', changeColor);
+  mainForm.addEventListener('input', changeColor);
 }
 
 function captureR(event) {
@@ -50,5 +46,6 @@ function changeColor() {
   var ColorB = input3.value;
 
   var demo = document.querySelector('#demo-color');
-  demo.style.background = 'rgb(' + ColorR + ',' + ColorG + ',' + ColorB + ')';
+  //Mudando background no css com template literals.
+  demo.style.background = `rgb(${ColorR},${ColorG}, ${ColorB})`;
 }
