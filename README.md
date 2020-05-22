@@ -2,4 +2,4 @@
 
 Editado no Github.
 
-editado no vscode loccalmente.
+editado no vscode loccalmente. :computer:
